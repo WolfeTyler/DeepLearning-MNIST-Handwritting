@@ -1,14 +1,6 @@
 # DeepLearning-MNIST-Handwritting
 Image recognition project using the NVIDIA DIGITS environment to train a GoogLeNet CNN to accurately identify handwritten characters
 
-# RoboND Robotic Inference Project
-
-Robotic Inference using NVidia DIGITS and NVidia Jetson TX2 Development Board
-
-# Classifying banknotes using Neural Network
-### (c) Muthanna A. Attyah 
-### April 2018
-
 ## Abstract
 NVIDIA's DIGITS (Deep Learning GPU Training System) provides a training system for neural networks in order to perform image classification, segmentation, and object detection tasks. Within the domain of image classification is an area known as character recognition, whereby a computer program is capable of taking a image of  handwriting as input and converting that into machine-encoded text. To test DIGITS' neural network training capabilities the MNIST handwritten database was utilized using GoogLeNet's 22 layer deep CNN.
 
