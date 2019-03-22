@@ -19,8 +19,8 @@ Fig 1: Handwriting Classification Diagram
 ## Data Acquisition
 Within the DIGITS environment the first task was the import the training data from the Modified National Institute of Standards and Technology (MNIST) handwriting character database. The data-set includes 45,002 images in total sub-divided into format specific training and validation sub-sets. The handwritten character images are based in greyscale RGB codes from 0 to 255. The labeled digits container labels from 0 to 9. NVIDIA's DIGITS (as well as other leading machine learning environments, including Keras) provide programmatic path to downloading the data into the testing environment
 
-Fig 2: MNIST Handwritten Digits Labeled
-<p align="center"> <img src="./images/MNIST.png"> </p>
+Fig 2: Accessing MNIST Handwriting Data with Python in DIGITS
+<p align="center"> <img src="./images/dataaccess.PNG"> </p>
 
 ## Results
 Through Epoch 2 the model performed with .962 accuracy and .999 top5 val accuracy running on the supplied GPU-based hardware setup within 24 minutes and 6 seconds. The average inference time after 5 10 run cycles was 4.94ms.
