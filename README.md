@@ -8,7 +8,7 @@ NVIDIA's DIGITS (Deep Learning GPU Training System) provides a training system f
 The average child learns to read by 6 or 7 years old. Understanding the difference between a numeric 0 and the letter O is a relatively easy task for human readers given a few words of context, however correctly identifying handwritten characters has historically proven more difficult for computers. Due to numerous subtle variations across handwriting styles logical rule-based approaches over the past 3 decades to identify characters have been error-prone. However, in the last 10 years GPU-based deep learning methods have enabled significant improvements in recognition speed and accuracy. NVIDIA's DIGITS provides a GPU-powered training environment for deep learning giving the infrastructure to tackle the handwritten character challenge as efficiently as possible. GoogLeNet is a powerful convolutional neural network that can be utilized with the DIGITS environment to train against a given data source. The MNIST handwritten character database was selected for training and testing given its rich source of tens of thousands of handwritten character samples. 
 
 ## Background / Formulation
-To perform the task of accurately translating images of characters into encoded digital text an image classification model had to be established and optimized in order for the CNN to train against the dataset. GoogLeNet was selected using a training batch size of 32 and learning rate of 0.01. Initially 10 training epochs were utilized, however it was noted that using a few as 2 training epochs could result in relatively high accuracy. \href{https://medium.com/@sidereal/cnns-architectures-lenet-alexnet-vgg-googlenet-resnet-and-more-666091488df5}{GoogLeNet} was selected due to its demonstrated accuracy leadership in similar character recognition published research. For additional context the following versions were utilized during the course of the model development, training, and testing:
+To perform the task of accurately translating images of characters into encoded digital text an image classification model had to be established and optimized in order for the CNN to train against the dataset. GoogLeNet was selected using a training batch size of 32 and learning rate of 0.01. Initially 10 training epochs were utilized, however it was noted that using a few as 2 training epochs could result in relatively high accuracy. [GoogLeNet](https://medium.com/@sidereal/cnns-architectures-lenet-alexnet-vgg-googlenet-resnet-and-more-666091488df5)was selected due to its demonstrated accuracy leadership in similar character recognition published research. For additional context the following versions were utilized during the course of the model development, training, and testing:
 * DIGITS version: 6.1.0
 * Caffe version: 0.15.14
 * Caffe flavor: NVIDIA
@@ -26,12 +26,12 @@ Fig 2: MNIST Handwritten Digits Labeled
 Through Epoch 2 the model performed with .962 accuracy and .999 top5 val accuracy running on the supplied GPU-based hardware setup within 24 minutes and 6 seconds. The average inference time after 5 10 run cycles was 4.94ms.
 
 Fig 3: Trained Model Charting - Epoch 2
-<p align="center"> <img src="./images/mnisttrain_trainedmodel_chart.png"> </p>
+<p align="center"> <img src="./images/mnisttrain_trainedmodel_chart.PNG"> </p>
 
 The trained model was also tested against specific local examples of character digits image files. The first example image contains the digit 2 and is predicted by the model to be a 2 with .985 certainty.
 
 Fig 4: Testing Trained Model, Digit 2
-<p align="center"> <img src="./images/mnisttrain_trainedmodel_testdigit2.png"> </p>
+<p align="center"> <img src="./images/mnisttrain_trainedmodel_testdigit2.PNG"> </p>
 
 ## Discussion
 The model achieved relatively high >=.9 digit recognition accuracy with low inference times <10ms even when reducing the number of training epochs to a low number (ex. 2). While it may be surprising that this can be achieved with such a short training cycle span, it should be noted that even though handwritten digits contain a range of variation in handwriting style there is not as much pixel variance as would be expected when performing classification of complex non-character images such as of a vehicle driving on the road or a dog outside. Unlike images in real-world settings which significant background image noise, handwritten digits have no background image noise or the challenge of multicolored image complexity.
