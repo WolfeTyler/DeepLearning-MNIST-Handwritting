@@ -39,3 +39,11 @@ The model achieved relatively high >=.9 digit recognition accuracy with low infe
 ## Conclusion / Future work
 The NVIDIA's DIGITS deep learning environment using a trained GoogLeNet CNN is able to correctly perform image classification tasks against the MNIST handwriting digits database with a relatively high degree of accuracy. Future work potential includes more complex use cases of handwritten digits images including multiple digits in the form of tabular data and/or functions and operations with multiple digits. This would require the CNN to not only correctly predict the digit but also to identify when multiple digits are present, if there are functional operations to perform against those multiple digits, and if there is a table of digit data formatted within the image.
 
+## Getting Started
+You can get started with NVIDIA’s DIGITS [here](https://docs.nvidia.com/deeplearning/digits/digits-installation/index.html)
+and explore the MNIST handwritten digits data-set [here](http://yann.lecun.com/exdb/mnist/).
+
+If you visit the link above and/or access the PDF report you can get more info on setting up the data-set and training the model once you have your NVIDIA DIGITS environment up and running.
+
+
+
